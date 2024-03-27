@@ -50,7 +50,7 @@ class UserSolution
 		hm.clear();
 		pointList.clear();
 		for (int i = 0; i < 41; i++) { // 1부터 4000까지의 X, Y 범위를 L의 최대 크기인 100배 만큼 압축하면 변수에 저장된 데이터를 불러오는 시간을 100배 절약 가능
-			pointList.add(new ArrayList<List<Point>>());
+			pointList.add(new ArrayList<>());
 			for (int j = 0; j < 41; j++) {
 				pointList.get(i).add(new ArrayList<Point>());
 			}
