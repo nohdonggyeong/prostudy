@@ -75,6 +75,8 @@ class Solution {
 	}
 
 	public static void main(String[] args) throws Exception {
+		long start = System.currentTimeMillis();
+		
 		int TC, MARK;
 
 		//System.setIn(new java.io.FileInputStream("input.txt"));
@@ -90,6 +92,8 @@ class Solution {
 			System.out.println("#" + testcase + " " + score);
 		}
 
+		long end = System.currentTimeMillis();
+		System.out.println("Runtime: " + (end - start) + "ms");
 		br.close();
 	}
 }
