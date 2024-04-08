@@ -93,7 +93,7 @@ class Solution {
 		}
 
 		long end = System.currentTimeMillis();
-		System.out.println("Runtime: " + (end - start) + "ms");
+		System.out.println("Runtime: " + (end - start) / 1000.0 + " ms");
 		br.close();
 	}
 }
