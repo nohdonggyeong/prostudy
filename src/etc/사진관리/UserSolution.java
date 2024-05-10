@@ -91,10 +91,10 @@ class UserSolution {
     	int id = -1;
     	if (mFilter.contains("LOC:[")) {
     		String location = mFilter.substring(5, mFilter.length() - 1);
-    		id = locationMap.get(location).get(locationMap.size() - K).id;
+    		id = locationMap.get(location).get(locationMap.get(location).size() - K).id;
     	} else {
     		String people = mFilter.substring(8, mFilter.length() - 1);
-    		id = peopleMap.get(people).get(peopleMap.size() - K).id;
+    		id = peopleMap.get(people).get(peopleMap.get(people).size() - K).id;
     	}
     	return id;
     }
