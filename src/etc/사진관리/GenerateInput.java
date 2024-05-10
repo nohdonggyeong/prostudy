@@ -94,7 +94,7 @@ public class GenerateInput {
     			Integer.parseInt(timeArr[2]));
 
     	String location = picture.substring(locationIndex + 7, peopleIndex);
-    	String[] people = picture.substring(peopleIndex + 10, picture.length()).split(",");
+    	String[] people = picture.substring(peopleIndex + 10, picture.length() - 1).split(",");
     	
     	return new MetaData(id, dateTime, location, people);
     }
